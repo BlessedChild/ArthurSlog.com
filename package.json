@@ -1,0 +1,24 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-static": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlessedChild/ArthurSlog.com.git"
+  },
+  "author": "ArthurSlog",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlessedChild/ArthurSlog.com/issues"
+  },
+  "homepage": "https://github.com/BlessedChild/ArthurSlog.com#readme"
+}
