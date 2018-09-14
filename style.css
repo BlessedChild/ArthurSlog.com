@@ -1,13 +1,19 @@
 body{ 
     background-image:url('background.jpg');
     background-repeat:no-repeat;
-    background-position:50% -10%;
+    background-position: 50% -10%;
 }
 
 p{
     font-size: 48px;
     position: relative;
     left: calc(50% - 144px);
+}
+
+div{
+    font-size: 48px;
+    position: relative;
+    left: calc(50% - 300px);
 }
 
 footer {

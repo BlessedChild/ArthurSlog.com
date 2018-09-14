@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ArthurSlog_MarkdownEditor</title>
+    <meta charset="UTF-8">
+    <script src="./markdown-it.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <!-- ArthurSlog_Manual_Area -->
+        <div id="editorManual">
+            <div id="editorManual_Title">ArthurSlog 创作中心</div>
+            <div id="editorManual_Tool">工具栏（建设中...）</div>
+        </div>
+        <div id="editorContent">
+            <!-- ArthurSlog_MarkdownEditor_Area -->
+            <div id="sourceCode_Markdown" contenteditable="true"></div>
+
+            <div id="middleLine"></div>
+            <!-- ArthurSlog_MarkdownToHTML_AREA -->
+            <div id="resultCode_HTML"></div>
+        </div>
+    </div>
+
+    <script>
+        // target.addEventListener(type, listener, options);
+        // target.addEventListener(type, listener ,{capture: Boolean, passive: Boolean, once: Boolean});
+        // target.addEventListener(type, listener, useCapture);
+        // target.addEventListener(type, listener[, useCapture, wantsUntrusted  ]); 
+        // ---
+        // 1. target = document.getElementById("basic")
+        // 2. type = 'input'
+        // 3. listener = document.getElementById("resultHTML").innerHTML = window.markdownit().render(document.getElementById("basic").value)
+        // 4. options = false
+        // =>
+        // 5. target.addEventListener(type, listener, options)
+        document.getElementById("sourceCode_Markdown").addEventListener('input', function () { document.getElementById("resultCode_HTML").innerHTML = window.markdownit().render(document.getElementById("sourceCode_Markdown").innerText) }, false);
+        //document.getElementById("sourceCode_Markdown").addEventListener('paste', function () { document.getElementById("sourceCode_Markdown").innerText = document.getElementById("sourceCode_Markdown").innerText.toString()}, false);
+        document.getElementById("sourceCode_Markdown").style.boxShadow = "none";
+        document.getElementById("sourceCode_Markdown").style.textShadow = "none";
+        document.getElementById("sourceCode_Markdown").style.outlineColor = "none";
+        document.getElementById("sourceCode_Markdown").style.outlineStyle = "none";
+        document.getElementById("sourceCode_Markdown").style.outline = "none";
+        document.getElementById("sourceCode_Markdown").style.borderColor = "none";
+        
+
+        document.getElementById("sourceCode_Markdown").style.textTransform = "none";
+        document.getElementById("sourceCode_Markdown").style.textDecoration = "none";
+        document.getElementById("sourceCode_Markdown").style.transform = "none";
+        document.getElementById("sourceCode_Markdown").style.backgroundColor = "none";
+        document.getElementById("sourceCode_Markdown").style.baselineShift = "none";
+
+    </script>
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            display: block;
+            overflow: hidden;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+        }
+
+        #EditorManual {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-left: 0%;
+            margin-right: 0%;
+            height: 15vh;
+        }
+
+        #editorManual_Title {
+            margin-left: 0%;
+            margin-right: 0%;
+            height: 10vh;
+            background-color: ghostwhite;
+        }
+
+        #editorManual_Tool {
+            margin-left: 0%;
+            margin-right: 0%;
+            height: 5vh;
+            background-color: rgb(211, 250, 255);
+        }
+
+        #editorContent {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            margin: 0;
+            padding: 0;
+        }
+
+        #sourceCode_Markdown {
+            width: 47.5vw;
+            height: 85vh;
+            margin-left: 0%;
+            margin-right: 0%;
+            overflow: scroll;
+            background-color: aliceblue;
+            text-decoration:none;
+        }
+
+        #middleLine {
+            width: 5vw;
+            height: 85vh;
+            overflow: hidden;
+            background-color: ghostwhite;
+        }
+
+        #resultCode_HTML {
+            width: 47.5vw;
+            height: 85vh;
+            margin-left: 0%;
+            margin-right: 0%;
+            overflow: scroll;
+            background-color: ghostwhite;
+        }
+    </style>
+</body>
+
+</html>
