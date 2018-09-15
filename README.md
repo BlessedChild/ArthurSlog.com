@@ -12,7 +12,7 @@
 
 5. sudo npm i
 
-6. sudo npm i forever -g (Please do this setp if you have not install forever,,or you can go on setp 7)
+6. sudo npm i forever -g (Please do this setp if you have not install forever, or you can go on setp 7)
 
 7. ln -s /usr/loacl/src/node-v8/bin/forever /usr/bin (forever will be installed in your nodejs_path/bin/forever, please check your nodejs's path just like /usr/loacl/src/node-v8/bin/forever)
 
