@@ -3,7 +3,7 @@ const Koa = require('koa');
 const app = new Koa();
 
 // $ GET /package.json
-app.use(serve('../client/dist'));
+app.use(serve('../client/dist/ArthurSlogHome/dist/'));
 
 app.listen(80);
 
