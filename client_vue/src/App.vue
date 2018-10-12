@@ -1,44 +1,46 @@
 <template>
   <div id="app">
-    <div id="headerBar">
-      <div id="headerAbout">About</div>
-      <div id="headerPrototype">Prototype</div>
-      <div id="headerLogo">
-        <img alt="Vue logo" src="./assets/logo.png">
-      </div>
-      <div id="headerSlog">Slog</div>
-      <div id="headerContant">Contant</div>
-      <div id="search">
-        <img alt="Vue logo" src="./assets/icon_search.png">
-      </div>
-    </div>
-    <div id="hero">
-      <img alt="Vue logo" src="./assets/hero.jpg">
-    </div>
-    <div id="text-left-image-right1">
-      <div id="box-show">
-        <div id="text-left-image-right1-text">
-          Autumn
+    <div id="navigation">
+      <div id="headerBar">
+        <div id="headerAbout">About</div>
+        <div id="headerPrototype">Prototype</div>
+        <div id="headerLogo">
+          <img alt="Vue logo" src="./assets/logo.png">
         </div>
-        <div id="text-left-image-right1-img">
-          <img alt="Vue logo" src="./assets/autumn-fog-forest-1287469.png">
+        <div id="headerSlog">Slog</div>
+        <div id="headerContant">Contant</div>
+        </div>
+        <div id="search">
+          <img alt="Vue logo" src="./assets/icon_search.png">
         </div>
       </div>
-    </div>
-    <div id="gap">
-      <img alt="Vue logo" src="./assets/green-leaves-plant-1072179.png">
-    </div>
-        <div id="text-left-image-right1">
-      <div id="box-show">
-        <div id="text-left-image-right1-text">
-          Autumn
+      <div id="hero">
+        <img alt="Vue logo" src="./assets/hero.jpg">
+      </div>
+      <div id="text-left-image-right1">
+        <div id="box-show">
+          <div id="text-left-image-right1-text">
+            Autumn
+          </div>
+          <div id="text-left-image-right1-img">
+            <img alt="Vue logo" src="./assets/autumn-fog-forest-1287469.png">
+          </div>
         </div>
-        <div id="text-left-image-right1-img">
-          <img alt="Vue logo" src="./assets/autumn-fog-forest-1287469.png">
+      </div>
+      <div id="gap">
+        <img alt="Vue logo" src="./assets/green-leaves-plant-1072179.png">
+      </div>
+          <div id="text-left-image-right1">
+        <div id="box-show">
+          <div id="text-left-image-right1-text">
+            Autumn
+          </div>
+          <div id="text-left-image-right1-img">
+            <img alt="Vue logo" src="./assets/autumn-fog-forest-1287469.png">
+          </div>
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -66,6 +68,16 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+#navigation {
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 128px;
+  box-shadow: 0px 3px 5px rgba(0.5, 0.5, 0.5, 0.1);
 }
 #headerBar {
   position: relative;
@@ -97,6 +109,7 @@ export default {
   margin-top: 80px;
 }
 #hero {
+  margin-top: 10px;
   height: 650px;
   width: 1440px;
 }
